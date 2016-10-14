@@ -271,7 +271,7 @@ textarea {
 }
 .post-meta {
 	list-style:none;
-	text-align:center;
+	text-align:left;
 	margin-bottom:15px;
 	padding:15px 0;
 	border-color:#ccc;
