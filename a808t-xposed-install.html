@@ -59,21 +59,16 @@
 <p>最近，公司的一批新机器需要上Xposed，受限于价格，最后选择了联想A8二代（A808T）。</p>
 <p>本来以为低价就低价吧，结果发现这货竟然装不上XP，于是四处求方才发现，联想手机中不少机型都需要修改虚拟机的执行机制，然后再装上一个补丁。因为是新机，所以整个过程是相当的坑……</p>
 <h1>无奈之余，记录下这个操蛋的过程吧</h1>
-<p>1.Root，Kingroot 即可</p>
-<p>2.修改build.prop，在末尾添加dalvik.vm.execution-mode=int:fast</p>
-<p>3.安装移动叔叔MTK工具箱，获得root授权后，将三方的recovery刷入手机，并重启至recovery模式</p>
-<p>4.卡刷A808T的补丁，然后重启手机</p>
-<p>5.按照正常方式安装xposed</p>
-<h1>需要准备的资料</h1>
+
 <pre class="prettyprint linenums prettyprinted">
 <ol class="linenums">
-<li class="L0"><code class="lang-shell"><span class="com"># ls /etc/yum.repos.d</span></code></li>
-<li class="L1"><code class="lang-shell"><span class="pln">  rhel</span>
-<span class="pun">-</span>
-<span class="pln">source</span>
-<span class="pun">.</span>
-<span class="pln">repo</span>
-</code></li></ol></pre>		    
+<li class="L0"><code class="lang-shell"><span class="com">1.Root，Kingroot 即可</span></code></li>
+<li class="L0"><code class="lang-shell"><span class="com">2.修改build.prop，在末尾添加dalvik.vm.execution-mode=int:fast</span></code></li>
+</ol></pre>		    
+<li class="L0"><code class="lang-shell"><span class="com">3.安装移动叔叔MTK工具箱，获得root授权后，将三方的recovery刷入手机，并重启至recovery模式</span></code></li>		    
+<li class="L0"><code class="lang-shell"><span class="com">4.卡刷A808T的补丁，然后重启手机</span></code></li>		    
+<li class="L0"><code class="lang-shell"><span class="com">5.按照正常方式安装xposed</span></code></li>		    
+		    
 		    	</div>
 </div>
         
