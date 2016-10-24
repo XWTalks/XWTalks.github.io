@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>联想A808T安装Xposed - 徐伟的博客</title>
+    <!-- 使用url函数转换相关路径 -->
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="Hi，欢迎来到徐伟的博客">
+<meta name="keywords" content="徐伟的博客,徐伟,技术笔记,技术博客">
+</head>
+<body>
+
+    
+    
+<div id="secondary">
+		 		<nav id="nav" class="sb" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+			<ul id="site-menu" class="nav-menu">
+				<li><a href="index.html">首页</a></li>
+																				<li id="menu-item-2" class="menu-item">
+					<a href="about.html" title="关于">
+							关于					</a>
+				</li>
+															</ul>
+		 </nav><footer id="footer" class="sb" role="contentinfo">
+    <ul>
+       <li>© 2016<a href="index.html">徐伟的博客</a></li>
+       <li>由 <a href="https://www.32mb.win/">32MB.WIN</a> 设计</li>
+    </ul>
+</footer><!-- end #footer -->
+
+<link rel="stylesheet" href="css/editormd.css">
+<link rel="stylesheet" href="css/emojify.css">
+
+
+</div><!-- end #secondary -->
+<header id="header" role="post">
+<h1 class="post-title" itemprop="name headline">开始用HTML写博客
+</h1></header>
+<div id="main" role="main">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        
+        <ul class="post-meta">
+            <li itemprop="author" itemscope="" itemtype="http://schema.org/Person">作者: <a itemprop="name" href="http://ixuwei.cn" rel="author">徐伟</a></li>
+            <li>时间: <time datetime="2016-10-24T15:17:00+08:00" itemprop="datePublished">2016-10-24</time></li>
+            
+        </ul>
+        <div class="post-content" itemprop="articleBody">
+            <div id="md_content_1" class="md_content markdown-body editormd-html-preview" style="background-position: center;background-repeat: no-repeat; min-height: 50px;">
+<p>最近，公司的一批新机器需要上Xposed，受限于价格，最后选择了联想A8二代（A808T）。</p>
+<p>本来以为低价就低价吧，结果发现这货竟然装不上XP，于是四处求方才发现，联想手机中不少机型都需要修改虚拟机的执行机制，然后再装上一个补丁。因为是新机，所以整个过程是相当的坑……</p>
+<p>记录下，过程是这样的：</p>
+<p>1.Root，Kingroot 即可</p>
+<p>2.修改build.prop，在末尾添加dalvik.vm.execution-mode=int:fast</p>
+<p>3.安装移动叔叔MTK工具箱，获得root授权后，将三方的recovery刷入手机，并重启至recovery模式</p>
+<p>4.卡刷A808T的补丁，然后重启手机</p>
+<p>5.按照正常方式安装xposed</p>
+    </div>
+</div>
+        
+    </article>
+
+    
+
+
+
+
+</div><!-- end #main-->
+
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>
